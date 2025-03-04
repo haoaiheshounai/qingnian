@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息收集</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>个人信息收集</h1>
+        <form id="infoForm" action="submit.html" method="GET">
+            <div class="form-group">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">手机号码:</label>
+                <input type="text" id="phone" name="phone" required>
+                <span id="phoneError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="major">专业名称:</label>
+                <input type="text" id="major" name="major" required>
+            </div>
+            <div class="form-group">
+                <label for="idCard">身份证号码:</label>
+                <input type="text" id="idCard" name="idCard" required>
+                <span id="idCardError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="bankCard">银行卡号:</label>
+                <input type="text" id="bankCard" name="bankCard" required>
+                <span id="bankCardError" class="error"></span>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
